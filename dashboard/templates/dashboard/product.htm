@@ -1,0 +1,74 @@
+{% extends 'partials/base.htm' %}
+{% block title %}product page{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+  
+ {% include 'partials/topnav.htm' %}
+<div class="container" style="background-color: aqua;">
+    <div class="row my-4">
+        <div class="col-md-4">
+            <div class="border bg-white p-3">
+                
+               {% for message in messages  %}
+               {% if message %}
+                <div class="alert alert-{{ message.tags}}"> 
+                    {{message}}
+                </div>
+                {% endif %}
+                {% endfor %}
+                <h4>Add Products</h4>
+                <hr>
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form | crispy}}
+
+                    <input class="btn btn-success btn-block" type="submit" value="Add Product">
+
+                </form>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <table class="table table-hover table-dark">
+                <thead class="bg-info">
+                    <tr class="text-white">
+                        {% comment %} <th scope="col">#</th> {% endcomment %}
+                        <th scope="col">Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    {% for item in items %}
+                    <tr>
+                        
+                        
+                        {% comment %} <th scope="row">1</th> {% endcomment %}
+                        <td><b>{{ item.name }}</b></td>
+                        <td><i>{{item.category }}</i></td>
+                        <td><p style="color: rgb(229, 244, 70);">{{ item.quantity }}</p></td>
+                        <td>
+                            <a href="{% url 'dashboard-productUpdate' item.id %}">
+                                <span class="glyphicon glyphicon-edit"></span>
+                              </a>
+                            <!-- <a class="btn btn-info btn-sm" href="{% url 'dashboard-productUpdate' item.id %}">Edit</a> -->
+                            <a href="{% url 'dashboard-productDelete' item.id %}">
+                                <span class="glyphicon glyphicon-trash"></span>
+                              </a>
+                            <!-- <a class="btn btn-danger btn-sm" href="{% url 'dashboard-productDelete' item.id %}">Delete</a> -->
+                        </td>
+                    </tr>
+                   {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

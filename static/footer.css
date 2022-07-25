@@ -1,0 +1,25 @@
+.footerbox{
+    height:550px;
+    Border:4px solid black;
+    background-color: rgb(49, 49, 122);
+}
+#follow{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.742);
+}
+.logos{
+    text-align: left;
+    color: white;
+    text-align: center;
+}
+#contact{
+    color: white;
+    text-align: center;
+}
+#td1{
+    color: white;
+    margin-left: 250px;
+}
+.myul{
+    list-style-type: none;
+}

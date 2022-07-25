@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% extends 'partials/base.htm' %}
+  {% block content %}
+  {% load static %}
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <style>
+        .column {
+            float: left;
+            width: 23.6%;
+            padding: 5px;
+          }
+          
+          /* Clear floats after image containers */
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          * {
+            box-sizing: border-box;
+            background-color: whitesmoke;
+          }
+          
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          /* Float four columns side by side */
+          .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+          }
+          
+          /* Remove extra left and right margins, due to padding in columns */
+          .row {margin: 0 -5px;}
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Style the counter cards */
+          .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+          }
+          
+          /* Responsive columns - one column layout (vertical) on small screens */
+          @media screen and (max-width: 600px) {
+            .column {
+              width: 100%;
+              display: block;
+              margin-bottom: 20px;
+            }
+          }
+
+
+
+
+
+          .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 25%;
+            margin: auto;
+            text-align: center;
+            float: left;
+            padding: 10 100px;
+            margin: 50px;
+          }
+          
+          .rolebased {
+            color: grey;
+            font-size: 20px;
+            
+          }
+          
+          button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+          }
+          
+          a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+          }
+          
+          button:hover, a:hover {
+            opacity: 0.7;
+          }
+
+          .profilecards{
+            margin-left: 0%;
+            
+          }
+
+          
+
+
+
+
+
+
+
+
+
+    </style>
+    <link rel="stylesheet" href='{% static 'copycont.css'%}'>
+</head>
+<body>
+ 
+    <center>
+          
+        <img src='/static/klcover.png' width="100%" />
+        <br></br>
+        <p id="TeamHeading">SKILL DEVELOPMENT PROJECT-2 | 3177 </p>
+         <div id="aboutcontentbox">
+         <p  >We are CSE sophomores from KL University pursuing our Bachelor’s in Technology. 
+         We started a mid grade major project as a Skill development. We will be implementing concepts that we
+          have learnt to optimize and solve the problems faced by the SCM users. This will cover each and every 
+          component of Supply chain from suppliers to Customers.</p>
+          
+         </div>
+         <p id="courselist">
+            We chose the domain Supply Chain Management for our Skill Development Project - 2.
+            </p>
+            <div class="row">
+                <div class="column">
+                  <img src="/static/aids.jpg" alt="AI-DS" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="/static/daa.png" alt="DAA" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="/static/pfsd.jpeg" alt="PFSD" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="/static/Mp-1.jpg" alt="Mp2" style="width:100%">
+                  </div>
+              </div>
+
+
+              <h2>Our Team Members</h2>
+
+              <!-- <div class="row">
+                <div class="column">
+                  <img src="/static/Nirupic.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="/static/Sampic.jpg" alt="Forest" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="/static/Soumpic.jpg" alt="Mountains" style="width:100%">
+                </div>
+                </div> -->
+                <!-- <div class="card" style="width: 2rem;">
+                  <img class="card-img-top" src="/static/Nirupic.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Heyyy</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="/static/Sampic.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Heyyy</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="/static/Soumpic.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Heyyy</p>
+                  </div>
+                </div> -->
+
+
+
+
+
+
+                <div class="profilecards">
+
+                <div class="card">
+                  <img src="/static/Nirupic.jpg" alt="John" style="width:100%">
+                  <h1>Nirupam</h1>
+                  <h3 class="rolebased">Front End Developer</h3>
+                  <p>KL University</p>
+                  <a href="https://github.com/NirupamMallem/SDP-2"><i class="fa fa-github"></i></a>
+                  
+                  <a href="https://www.linkedin.com/in/mallem-sai-nirupam-3b86a3215/"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <p><button>Contact</button></p>
+                </div>
+
+                <div class="card">
+                  <img src="/static/Sampic.jpg" alt="John" style="width:100%">
+                  <h1>L Sampath Kumar </h1>
+                  <h3 class="rolebased">Django Developer</h3>
+                  <p>KL University</p>
+                  <a href="#"><i class="fa fa-github"></i></a>
+                  
+                  <a href="https://www.linkedin.com/in/l-sampath-kumar-67a5a6211/"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <p><button>Contact</button></p>
+                </div>
+
+                <div class="card">
+                  <img src="/static/Soumpic.jpg" alt="John" style="width:100%">
+                  <h1>S Soumya Prasad</h1>
+                  <h3 class="rolebased"> Team Lead </h3>
+                  <p>KL University</p>
+                  <a href="https://github.com/soum1313"><i class="fa fa-github"></i></a>
+                  
+                  <a href="https://www.linkedin.com/in/s-soumya-prasad-0b06481b4/"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <p><button>Contact</button></p>
+                </div>
+              </div>
+
+
+              <!-- <section id="about" style="padding: 60px 0 30px 0;">
+                <div class="container" data-aos="fade-up">
+                  <div class="row">
+                    <div class="col-lg-6 about-img" style="overflow: hidden;max-width: 600px;height: auto;">
+                      <img src="/static/aids.jpg" alt="">
+                    </div>
+          
+                    <!-- <div class="col-lg-6 content">
+                      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                      <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+          
+                      <ul>
+                        <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                        <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                      </ul>
+          
+                    </div> -->
+                  </div>
+          
+                </div> 
+              </section>
+
+
+    
+
+                
+         
+    </center>
+
+</body>
+{% endblock %} 
+</html>

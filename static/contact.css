@@ -1,0 +1,68 @@
+.aboutbox{
+    height: 2500px;
+    border: 0px solid black;
+}
+#aboutcontentbox{
+    width:40%;
+    border:0px solid black;
+    font-size: 17px;
+    /* font-family: 'Fuzzy Bubbles', cursive;
+     */
+}
+strong {display: inline !important}
+#TeamHeading{
+ font-size: 44px;
+ font-weight: 600;
+ font-family: 'Public Sans', sans-serif;
+}
+
+
+#lst{
+    text-align: center;
+}
+#klcover{
+    width:100%;
+
+}
+#introcontent{
+    font-size:22px;
+
+}
+#courselist{
+
+    font-size:24px;
+        
+}
+.coursecard{
+    text-align: center;
+}
+.courseimg{
+    border-radius: 50px;
+}
+
+#innernav{
+    color:red;
+    font: 28px;
+    height: 60px;
+    border: 4px solid black;
+    padding-left: 1100px;
+    padding-top: 10px;
+}
+.PCardlnk{
+    color:blue;
+    margin-left: 40px;
+    font-size:26px;
+    border-radius: 30%;
+    padding:10px;
+    text-decoration:none;
+}
+.PCardlnk:hover{
+    color:red;
+    font-size:29px;
+}
+
+
+
+
+
+

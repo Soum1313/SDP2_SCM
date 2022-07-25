@@ -1,0 +1,18 @@
+.style12{
+    color: rgb(73, 252, 29);
+    text-align: center;
+    font-size: xx-Large;
+}
+
+.border{
+    color: black; 
+}
+
+body {
+    background-image: url("s2.jpg");   
+    background-repeat: no-repeat;  
+    background-size: cover;
+   }
+.frm1{
+    color: white;
+}
